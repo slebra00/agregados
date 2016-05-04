@@ -7,7 +7,7 @@ package es.unileon.prg1.agregados;
  * @author MTP
  * @version 1.0
  */
-class PruebaSupermercado{
+public class PruebaSupermercado{
 	public static void main(String args[]){
 		Supermercado supermercado;
 		supermercado = new Supermercado("Galenas");
@@ -22,6 +22,6 @@ class PruebaSupermercado{
 		supermercado.anyadir(new Producto("borrador", 2.0, 30));
 		supermercado.anyadir(new Producto("dvd", 0.10, 500));
 		supermercado.anyadir(new Producto("toner", 100.0, 10));
-		System.out.println(supermercado);
+		System.out.println(supermercado.toString());
 	}
 }

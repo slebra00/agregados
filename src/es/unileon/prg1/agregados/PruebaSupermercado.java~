@@ -1,0 +1,17 @@
+package es.unileon.prg1.agregados;
+
+/**
+ * Clase de prueba que sirve para comprobar el funcionamiento 
+ * del supermercado.
+ *
+ * @author MTP
+ * @version 1.0
+ */
+public class PruebaSupermercado{
+	public static void main(String args[]){
+		Supermercado supermercado;
+		supermercado = new Supermercado("Galenas");
+		
+		System.out.println(supermercado.toString());
+	}
+}

@@ -96,14 +96,15 @@ class Almacen{
 		
 		Producto productoBuscado= null;
 		
-		int i=-1;
+		int i=0;
 		while((productos[i].esIgualA(nombre)==false)&&(i<siguiente)){
 			i++;
-			if(productos[i].esIgualA(nombre)==true){
-				productoBuscado = productos[i];
-			}
+			
 		}
-		
+		if(productos[i].esIgualA(nombre)==true){
+				productoBuscado = productos[i];
+		}
+
 		return productoBuscado;
 	}
 

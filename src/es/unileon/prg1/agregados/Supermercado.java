@@ -60,7 +60,14 @@ class Supermercado{
 	 */
 	public String toString(){
 		//COMPLETAR
-		return null;
+		
+		StringBuffer salida = new StringBuffer();
+
+		salida.append("Supermercado: "+this.nombre);
+
+		salida.append("\n"+almacen.toString());
+
+		return salida.toString();
 	}
 
 }
