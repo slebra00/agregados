@@ -37,7 +37,7 @@ class Supermercado{
 	 */
 	boolean anyadir(Producto producto){
 		//COMPLETAR
-		return this.almacen.anyadir(producto);
+		return false;
 	}
 
 	/**
@@ -50,7 +50,7 @@ class Supermercado{
 	 */
 	Producto buscar(String producto){
 		//COMPLETAR
-		return this.almacen.buscar(producto);
+		return null;
 	}
 
 	/**

@@ -115,11 +115,7 @@ class Almacen{
 	 * @param j posicion del segundo producto
 	 */
 	void cambiar(int i, int j){
-		//COMPLETAR
-		Producto aux = new Producto(productos[j]);
-		
-		productos[j]=productos[i];
-		productos[i]= aux;
+		//COMPLETAR MÄS ADELANTE
 
 	}
 

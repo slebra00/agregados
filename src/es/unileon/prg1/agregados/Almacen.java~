@@ -94,7 +94,7 @@ class Almacen{
 	Producto buscar(String nombre){
 		//COMPLETAR
 		
-		Producto productoBuscado;
+		Producto productoBuscado= null;
 		
 		int i=-1;
 		while((productos[i].esIgualA(nombre)==false)&&(i<siguiente)){
