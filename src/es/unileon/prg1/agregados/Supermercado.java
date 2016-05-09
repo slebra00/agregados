@@ -61,6 +61,8 @@ class Supermercado{
 	public String toString(){
 		//COMPLETAR
 		
+		this.almacen.ordenar();
+
 		StringBuffer salida = new StringBuffer();
 
 		salida.append("Supermercado: "+this.nombre);

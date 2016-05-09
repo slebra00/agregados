@@ -45,14 +45,15 @@ class Almacen{
 		//COMPLETAR
 		boolean anyadir = false;
 		int i=0;
-		while((producto.esIgualA(this.productos[i])==false)&&(i<MAXIMO_PROD)){
-			i++;
-		}
-		if(producto.esIgualA(this.productos[i])==true){
-			System.out.println("Error. El producto está repetido");
+
+	
+		if(existe(producto)==true){
+			if(i!=0){
+				System.out.println("Error. El producto "+producto.obtenerNombre()+" está repetido");
+			}
 		}
 		else if(this.siguiente==MAXIMO_PROD){
-			System.out.println("Error. No hay espacio");
+			System.out.println("Error. No hay espacio para "+producto.obtenerNombre());
 		}
 		else if(productos[siguiente]==null){
 			productos[siguiente++]=producto;
@@ -80,7 +81,7 @@ class Almacen{
 			i++;
 		}
 
-		return existe;
+		return existe; 
 	}
 
 	/**
@@ -116,8 +117,11 @@ class Almacen{
 	 * @param j posicion del segundo producto
 	 */
 	void cambiar(int i, int j){
-		//COMPLETAR MÄS ADELANTE
-
+		//COMPLETAR
+		Producto aux = productos[i];
+		productos[i]=productos[j];
+		productos[j]=aux;
+		
 	}
 
 	/**
@@ -168,9 +172,9 @@ class Almacen{
 		ordenar();
 		salida.append("---------");
 		salida.append("PRODUCTOS");
-		salida.append("---------");
+		salida.append("---------\n");
 		for (int i=0; i < siguiente; i++){
-			salida.append(productos[i].toString());
+			salida.append(productos[i].toString()+"\n");
 		}
 		return salida.toString();
 	}
